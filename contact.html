@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="navigation">
+                <nav class="navbar">
+                    <a href="/" class="nav-design"></a>
+                    <ul class="nav-menu">
+                        <li class="nav-link" id="#home"><a href="index.html">Home</a></li>
+                        <li class="nav-link" id="#aboutme"><a href="index.html">About</a></li>
+                        <li class="nav-link"><a href="qualifications.html">Qualifications</a></li>
+                        <li class="nav-link"><a href="skills.html">Skills</a></li>
+                        <li class="nav-link"><a href="project.html">Projects</a></li>
+                        <li class="nav-link" id="#testimonials"><a href="index.html">Testimonials</a></li>
+                        <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="contactbody">
+        <div class="contactme1">
+            <form action="" onsubmit="return validateForm()" name="myForm">
+                <h3>Contact Me</h3>
+                <input type="text" id="name" name="yname" placeholder="Your Name">
+                <input type="text" id="email" name="yemail" placeholder="Your Email-Id">
+                <input type="text" id="phone" name="yphone" placeholder="Your Phone Number">
+                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["yname"].value;
+              if (x == "") {
+                alert("Name must be filled out");
+                return false;
+              }
+              let y = document.forms["myForm"]["yemail"].value;
+              if (y == "") {
+                alert("Email must be filled out");
+                return false;
+              }
+              let z = document.forms["myForm"]["yphone"].value;
+              if (z == "") {
+                alert("Phone Number must be filled out");
+                return false;
+              }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

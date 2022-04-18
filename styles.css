@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Franklin:wght@300&family=Lora:ital@1&family=Quintessential&family=Sacramento&family=Source+Serif+4:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: #e2e9f8;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* Navigation Bar */
+
+body {
+    position: relative;
+    background-color: #e2e9f8;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1D2D50;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+.navigation {
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar-design {
+    font-size: 2rem;
+}
+
+@media(max-width: 1280px) {
+    .navigation {
+        width: 100%;
+    }
+}
+
+/* Home */
+
+.profile-photo {
+    border: 3px solid #ccd0d8;
+    border-radius: 50%;
+    border-width: 50%;
+    width: 20%;
+}
+
+.section-one-one {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 35px;
+    font-family:'Dancing Script', cursive;;
+    color: #1D2D50;
+}
+
+.section-one {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.section-one-one p {
+    font-size: 30px;
+}
+
+/* About Me */
+.section {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-size: 20px;
+    background-color: #1D2D50;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.sectionTag {
+    padding: 16px 0;
+    margin: 30px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+}
+
+.sectionSubTag {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    color: azure;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 26px;
+    margin: 30px;
+}
+
+paras {
+    padding: 0px 65px;
+}
+
+.aboutborder {
+    height: 70vh;
+}
+
+.block {
+    margin-top: 10px;
+
+}
+
+.projectstext {
+   padding-top: 20px;
+}
+.color1 {
+    background-color: #1D2D50;
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+.color2 {
+    background-color: #1D2D50;
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+/* Testimonials */
+
+  .testimonials {
+    padding: 40px 0;
+    background: #1D2D50;
+    color: azure;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 37vh;
+  }
+
+  .name {
+      color: #1D2D50;
+      font-weight: bold;
+  }
+
+  .inner{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 30vh;
+  }
+  .testimonial{
+    background: #e2e9f8;
+    padding: 20px;
+    height: 20vh;
+    border-radius: 5%;
+  }
+  .name{
+    font-size: 22px;
+    margin: 2px 0;
+  }
+
+  .ptext {
+      color: #1D2D50;
+      padding-top: 2px;
+  }
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+
+/* footer */
+.footer {
+    padding: 40px 0;
+    margin-top: 5px;
+    background-color: #1D2D50;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 5vh;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+} 
+
+/* Skills */
+.gridcontainer {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .griditem {
+    background-color: #e2e9f8;
+    border: 1px solid azure;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .h1text {
+      padding-top: 90px;
+      padding-bottom: 10px;
+      font-size: 50px;
+      text-align: center;
+      color: #1D2D50;
+  }
+
+  /* Contact */
+.contactbody {
+    margin: 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contactme1 {
+    width: 100%;
+    height: 100vh;
+    background: #e2e9f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #1D2D50;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: azure;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: #1D2D50;
+    color: azure;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
